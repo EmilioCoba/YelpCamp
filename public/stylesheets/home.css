@@ -32,3 +32,10 @@ body{
   color:#333 ;
   text-shadow:none ;
 }
+@media (max-width: 575px) {
+  .phone-paragraph {
+    font-size: 1em; /* Adjust the font size as needed */
+    line-height: 1.2; /* Adjust the line height as needed */
+    /* Add any other styles you want for phone paragraphs */
+  }
+}
