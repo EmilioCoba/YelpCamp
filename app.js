@@ -2,7 +2,7 @@ if(process.env.NODE_ENV !== 'production'){
   require('dotenv').config();
 }
 
-console.log(process.env.SECRET)
+
 
 const express = require('express');
 const path=require('path');
@@ -173,7 +173,8 @@ app.use((err,req,res,next)=>{
   res.status(statusCode).render('error',{err});
 })
 
+const port = process.env.PORT || 3000;
 
-app.listen(3000,()=>{
-  console.log('serving on port 3000')
+app.listen(port,()=>{
+  console.log(`serving on port ${port}`)
 })
